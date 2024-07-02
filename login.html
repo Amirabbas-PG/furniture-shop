@@ -1,0 +1,36 @@
+<!doctype html>
+<html dir="rel">
+<head>
+<meta charset="utf-8">
+<title>ثبت نام در سایت</title>
+<link href="css2/loginstyle.css" rel="stylesheet" type="text/css">
+<link href="img/icon.png" rel="icon">
+</head>
+
+<body>
+	<div class="login-box">
+    <img src="img/user1.png" width="128" height="128" alt="icon" class="avatar"/>
+		<br>
+		<br>
+		<h2 style="text-align: center;">ثبت نام در سایت</h2>
+		<form action="malto:sale@realmobl.com" id="login" method="post" name="login">
+			<label for="name">نام</label>
+			<br>
+			<input name="name" type="text" autofocus="autofocus" required="required" id="name" form="login" placeholder="نام">
+			<hr style="width: 280px;margin-top: 15px;">
+		  <label for="email">ایمیل</label>
+			<br>
+			<input name="email" type="email" required="required" id="email" form="login" placeholder="ایمیل">
+			<hr style="width: 280px;margin-top: 15px;">
+			<label for="passtword">کلمه عبور</label>
+			<input name="passtword" type="password" required="required" id="passtword" form="login" placeholder="کلمه عبور">
+			<hr style="width: 280px;margin-top: 15px;">
+			<br>
+			<input name="submit" type="submit" autofocus="autofocus" id="submit" form="login" formaction="malto:sale@realmobl.com" value="ثبت نام" class="send">
+		</form>
+		<a href="#" style="text-decoration: none">
+			<h5 class="link">فراموشی کلمه عبور</h5>
+		</a>
+	</div>
+</body>
+</html>

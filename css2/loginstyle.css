@@ -1,0 +1,121 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "B Homa";
+	background-image: url(../img/3-1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%  100%;
+	cursor: url("../img/cursor.png") , auto;
+}
+@media only screen and (max-width: 500px){
+	body{
+		background-color: rgba(38,38,38,1.00);
+		background-image: none;
+		
+	}
+}
+@media only screen and (max-width: 576.98px){
+	body{
+		background-color: rgba(38,38,38,1.00);
+		background-image: none;
+	}
+}
+::selection{
+	color: darkgoldenrod;
+	background-color: white;
+	background-blend-mode: color-burn;
+}
+.login-box{
+	width: 320px;
+	height: 630px;
+	background: rgba(0,0,0,0.60);
+	color: whitesmoke;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50% , -50%);
+	box-sizing: border-box;
+	border-radius: 20px;
+	text-align: center;
+	-webkit-box-shadow: 9px 38px 240px 25px #20477B;
+	box-shadow: 9px 38px 240px 25px #20477B;
+}
+.avatar{
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 61px);
+	transition: 0.6s;
+}
+.avatar:hover{
+	transform: rotate(360deg);
+}
+label{
+	float: right;
+	padding-right: 1rem;
+	font-size: 14pt;
+}
+@media only screen and (max-width: 500px){
+	label{
+		display: none;
+	}
+}
+@media only screen and (max-width: 576.98px){
+	label{
+		display: none;
+	}
+}
+input{
+	width: 280px;
+	height: 40px;
+	direction: rtl;
+	padding-right: 1rem;
+	background: rgba(0,0,0,0.70);
+	border: none;
+	color: #FFFFFF;
+	caret-color: #0D6D9B;
+	font-family: "B Homa";
+	border-radius: 5px;
+	margin-top: 10px;
+	outline: none;
+}
+input:focus{
+	-webkit-box-shadow: 1px 4px 50px -7px;
+	box-shadow: 1px 4px 50px -7px;
+}
+.send{
+	width: 140px;
+	justify-content: center;
+	border: 1.5px ridge #FFFFFF;
+	transition: 0.9s;
+	font-size: 14pt;
+	border-radius: 20px;
+	cursor: url("../img/hand-pointer.png") , pointer;
+}
+@media only screen and (max-width: 500px){
+	.send{
+		width: 120px;
+		font-size: 12pt;
+	}
+}
+@media only screen and (max-width: 576.98px){
+	.send{
+		width: 120px;
+		font-size: 12pt;
+	}
+}
+.send:hover{
+	background-color: goldenrod;
+	border: 1.5px solid #FFFFFF;
+}
+.link{
+	text-align: right;
+	padding-right: 1rem;
+	color: whitesmoke;
+	cursor: url("../img/hand-pointer.png") , pointer;
+	transition: 0.6s;
+}
+.link:hover{
+	color: gold;
+}

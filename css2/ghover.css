@@ -1,0 +1,102 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container5{
+	color: goldenrod;
+	display: inline-block;
+	font-family: "B Homa";
+	font-size: 1.1rem;
+	margin: 10px;
+	max-width: 400px;
+	min-width: 230px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+@media only screen and (max-width: 500px){
+	.container5{
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 597.89px){
+	.container5{
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 650.98px){
+	.container5{
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767.98px){
+	.container5{
+		float: none;
+		width: 100%;
+	}
+}
+.container5 h3{
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 15px;
+}
+.container5::before,
+.container5::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(39,22,39,0.34);
+	transform: scaleY(2);
+	z-index: 1;
+	opacity: 0;
+	transition: all .6s ease;
+	transform: rotateY(360deg)
+}
+.container5 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.container5 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.container5 figcaption{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 2;
+	opacity: 0;
+	transition-delay: 0;
+}
+.container5:hover img{
+	opacity: .7;
+}
+.container5:hover figcaption{
+	opacity: 1;
+	transition-delay: .6s;
+}
+.container5:hover::before ,
+.container5:hover::after{
+	opacity: 1;
+	transform: scaleY(1)
+}

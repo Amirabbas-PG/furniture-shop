@@ -1,0 +1,59 @@
+@charset "utf-8";
+.caroudel{
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	font-size: 20pt;
+
+	font-family: "B Homa";
+	line-height: 45px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(255,255,255,0.08) 100%);
+	-webkit-box-shadow: -6px 8px 104px 5px #9E9E9E;
+	box-shadow: -6px 8px 104px 5px #9E9E9E;
+}
+.pre{
+	text-shadow: 3px 4px 15px;
+	font-family: "B Homa";
+}
+.cheang-outer{
+	height: 45px;
+	padding-right: 9px;
+	overflow: hidden;
+}
+.cheang-ineer{
+	position: relative;
+	animation: cheangword 20s ease infinite;
+	animation-direction: reverse;
+	animation-direction: alternate;
+}
+.element{
+	display: block;
+	font-weight: 700;
+	color: gold;
+	text-shadow: 0 0 15px pink;
+	font-family: "B Homa"
+}
+@keyframes cheangword {
+	0% , 20%{
+		transform: translateX(0);
+	}
+	25% , 45%{
+		transform: translateY(-45px);
+	}
+	50% , 70%{
+		transform: translateY(-90px);
+	}
+	75% , 95%{
+		transform: translateY(-135px);
+	}
+	100%{
+		transform: translateY(-180px);
+	}
+}
